@@ -9,16 +9,24 @@ import java.lang.reflect.Proxy;
  * @Date: 2021/5/8 20:20
  */
 public class ProxyTeacher implements InvocationHandler {
+    /**
+     * 声明代理对象的引用
+     */
     Object target;
+
+    /**
+     * 注入代理对象
+     * @param target 代理对象
+     */
     public ProxyTeacher(Object target){
         this.target = target;
     }
 
     /**
      * 绑定方法定义
-     * @param proxy
-     * @param method
-     * @param args
+     * @param proxy 代理对象
+     * @param method 目标对象的方法对象
+     * @param args 目标对象的方法的参数值
      * @return
      * @throws Throwable
      */
