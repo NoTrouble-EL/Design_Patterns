@@ -14,7 +14,7 @@ public class ProxyTeacher implements MethodInterceptor {
     /**
      * 声明一个代理对象引用
      */
-    Object target;
+    private Object target;
 
     /**
      * 注入代理对象
