@@ -6,6 +6,7 @@ package cn.xiaohupao.simpleFactory;
  */
 public class Client {
     public static void main(String[] args) {
+
         Product productA = ProductSimpleFactory.createProduct("A");
         productA.print();
         Product productB = ProductSimpleFactory.createProduct("B");
